@@ -1,0 +1,40 @@
+<view class="page">
+    <!-- 侧边栏内容 -->
+    <view class="page-slidebar">
+        <view class="page-content">
+            <view class="wc">
+                <text>首页</text>
+            </view>
+            <view class="wc">
+                <text>导航一</text>
+            </view>
+            <view class="wc">
+                <text>导航二</text>
+            </view>
+            <view class="wc">
+                <text>导航三</text>
+            </view>
+        </view>
+    </view>
+    
+    <!-- 主页内容 -->
+
+    <!-- （open ? 'c-state' : ''）三元运算符： -->
+    <!-- 1.默认情况下 open 为 false -->
+    <!-- 2.当点击左上角图标的时候或者屏幕向左滑动，open 变化 true -->
+    <!-- 3.当 open 为 true 时，会加上类名为 c-state 和 cover 的 css 样式 -->
+
+    <!-- bindtouchstart、 bindtouchmove、bindtouchend -->
+    <!-- 当手指触摸屏幕并滑动时，所触发的三个函数 -->
+    <view bindtouchmove="tap_drag" bindtouchend="tap_end" bindtouchstart="tap_start" class="page-top {{open ? ['c-state','cover'] : ''}} ">
+        <image bindtap="tap_ch" src="../../images/btn.png"></image>
+        <view class='content'> 
+            <text>为了帮助开发者简单和高效地开发和调试微信小程序，我们在原有的公众号网页调试工具的基础上，推出了全新的 微信开发者工具，集成了公众号网页调试和小程序调试两种开发模式。
+
+使用公众号网页调试，开发者可以调试微信网页授权和微信JS-SDK 详情
+使用小程序调试，开发者可以完成小程序的 API 和页面的开发调试、代码查看和编辑、小程序预览和发布等功能。
+为了更好的开发体验，我们从视觉、交互、性能等方面对开发者工具进行升级，推出了 1.0.0 版本。</text>
+            <button>按钮</button>
+        </view>
+    </view>
+</view>

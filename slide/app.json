@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/slide/slide"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "侧边栏滑动演示",
+        "navigationBarTextStyle": "black"
+    },
+    "debug": true,
+    "tabBar": {
+        "position": "bottom",
+        "borderStyle": "black",
+        "color": "#000000",
+        "selectedColor": "#cc3333",
+        "list": [
+            {
+                "pagePath": "pages/slide/slide",
+                "text":"首页",
+                "iconPath": "/images/btn.png",
+                "selectedIconPath": "/images/btn.png"
+            },
+            {
+                "pagePath": "pages/slide/slide",
+                "text": "分类",
+                "iconPath": "/images/btn.png",
+                "selectedIconPath": "/images/btn.png"
+            },
+            {
+                "pagePath": "pages/slide/slide",
+                "text": "个人",
+                "iconPath": "/images/btn.png",
+                "selectedIconPath": "/images/btn.png"
+            }
+        ]
+    }
+}
